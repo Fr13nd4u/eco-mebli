@@ -1,0 +1,22 @@
+@import "../../../styles/palette.scss";
+
+.slide {
+  background: no-repeat center center fixed;
+  background-size: cover;
+  box-shadow: inset 0px -150px 50px -75px $darkColor;
+
+  &_body {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:nth-child(1) {
+    background-image: url("../../../assets/slides/slide-1.png");
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../../assets/slides/slide-2.png");
+  }
+}

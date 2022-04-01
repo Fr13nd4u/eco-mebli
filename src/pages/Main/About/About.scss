@@ -1,0 +1,73 @@
+@import "../../../styles/palette.scss";
+
+.about {
+  margin-top: 50px;
+  display: flex;
+
+  h2 {
+    font-size: 144px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: fit-content;
+  }
+
+  .vl {
+    margin: 110px 0 0 -63px;
+  }
+
+  &-item {
+    display: flex;
+    margin: 80px 0 0 -50px;
+
+    &_circule {
+      width: 73px;
+      height: 73px;
+      border-radius: 50px;
+      background: $secondColor;
+    }
+
+    &-description {
+      width: 75%;
+      text-transform: uppercase;
+      margin-left: 57px;
+
+      &_subtitle {
+        color: $secondTextColor;
+        font-size: 36px;
+        line-height: 1.75;
+        font-weight: 700;
+      }
+
+      &_title {
+        font-size: 72px;
+        font-weight: 700;
+        color: $mainTextColor;
+      }
+
+      &_text {
+        margin-top: 80px;
+        font-size: 24px;
+        color: $secondTextColor;
+        line-height: 1.75;
+      }
+
+      &-withLogo {
+        display: flex;
+        align-items: flex-end;
+
+        h6 {
+          color: $secondTextColor;
+          font-size: 36px;
+          line-height: 1.9;
+          margin-top: 80px;
+          font-weight: 600;
+        }
+
+        img {
+          height: 400px;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
