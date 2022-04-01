@@ -19,7 +19,7 @@ const Carousel = ({ children }: any) => {
         });
       })
     );
-  }, []);
+  }, [children]);
 
   const handleLeftArrowClick = () => {
     console.log("LEFT");
