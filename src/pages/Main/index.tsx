@@ -16,8 +16,6 @@ const Main = () => {
   const oX = Math.floor((x / width) * 100);
   const oY = Math.floor((y / height) * 100);
 
-  console.log(oX, oY);
-
   return (
     <>
       <Carousel>
