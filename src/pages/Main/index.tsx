@@ -66,8 +66,8 @@ const Main = () => {
                   src={logo}
                   alt="logo"
                   style={{
-                    top: `calc(-10% + ${oY}px)`,
-                    left: `calc(2% + ${oX}px)`,
+                    top: `calc(-15% + ${oY}px)`,
+                    left: `calc(-8% + ${oX}px)`,
                   }}
                 />
                 {circleSvg}
