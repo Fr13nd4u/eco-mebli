@@ -1,4 +1,5 @@
 import React from "react";
+
 import Carousel from "./Carousel";
 import About from "./About";
 import Services from "./Services";
@@ -75,9 +76,9 @@ const circleSvg = (
         width="732"
         height="732"
         filterUnits="userSpaceOnUse"
-        colorInterpolation-filters="sRGB"
+        colorinterpolation-filters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"

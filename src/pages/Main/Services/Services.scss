@@ -21,26 +21,47 @@
     background-size: 100% 100%;
     transition: 0.6s ease-in-out;
 
-    &_title {
-      font-size: 24px;
-      text-transform: uppercase;
-      text-align: center;
-      color: $darkColor;
-      background: $secondColor;
-      padding: 8px 0;
+    &_hovered {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
 
-      margin-top: -40px;
-      opacity: 0;
-      transition: 0.6s ease-in-out;
+      &-title {
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $darkColor;
+        background: $secondColor;
+        padding: 8px 0;
+        width: 100%;
+
+        margin-top: -40px;
+        transition: 0.6s ease-in-out;
+      }
+
+      &-icon {
+        padding: 20.5px 22px;
+        border-radius: 50%;
+        background: $secondColor;
+
+        margin-bottom: -80px;
+        transition: 0.6s ease-in-out;
+      }
     }
 
     &:hover {
       transition: 0.6s ease-in-out;
       background-size: 110% 110%;
 
-      .services-item_title {
+      .services-item_hovered-title {
         margin-top: 0;
-        opacity: 1;
+        transition: 0.6s ease-in-out;
+      }
+
+      .services-item_hovered-icon {
+        margin-bottom: 15px;
         transition: 0.6s ease-in-out;
       }
     }
