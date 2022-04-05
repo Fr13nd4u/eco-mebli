@@ -1,4 +1,5 @@
 import React from "react";
+import { useWindowDimensions, useMove } from "../../hooks/useMove";
 
 import Carousel from "./Carousel";
 import About from "./About";
@@ -9,14 +10,36 @@ import item_2 from "../../assets/slides/item-2.png";
 import logo from "../../assets/img/logo.png";
 
 const Main = () => {
+  const { width, height } = useWindowDimensions();
+  const { handleMouseMove, x, y } = useMove();
+
+  const oX = Math.floor((x / width) * 100);
+  const oY = Math.floor((y / height) * 100);
+
+  console.log(oX, oY);
+
   return (
     <>
       <Carousel>
-        <div className="slide">
+        <div className="slide" onMouseMove={handleMouseMove}>
           <div className="container">
             <div className="slide_body">
-              <div className="slide_body-circle">
-                <img src={logo} alt="logo" />
+              <div
+                className="slide_body-circle"
+                style={{
+                  top: `calc(50% + ${oY / 2}px)`,
+                  left: `calc(50% + ${oX / 2}px)`,
+                  transform: "translate(-50%, -50%)",
+                }}
+              >
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{
+                    top: `calc(-10% + ${oY}px)`,
+                    left: `calc(2% + ${oX}px)`,
+                  }}
+                />
                 {circleSvg}
               </div>
               <div className="slide_body-text">
@@ -30,11 +53,25 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="slide">
+        <div className="slide" onMouseMove={handleMouseMove}>
           <div className="container">
             <div className="slide_body">
-              <div className="slide_body-circle">
-                <img src={logo} alt="logo" />
+              <div
+                className="slide_body-circle"
+                style={{
+                  top: `calc(50% + ${oY / 2}px)`,
+                  left: `calc(50% + ${oX / 2}px)`,
+                  transform: "translate(-50%, -50%)",
+                }}
+              >
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{
+                    top: `calc(-10% + ${oY}px)`,
+                    left: `calc(2% + ${oX}px)`,
+                  }}
+                />
                 {circleSvg}
               </div>
               <div className="slide_body-text">
