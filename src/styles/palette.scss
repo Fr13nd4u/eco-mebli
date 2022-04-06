@@ -4,3 +4,12 @@ $secondTextColor: #c29e6f;
 $darkColor: #343434;
 $secondColor: #c9ad98;
 $secondTextColor: #e5e5e5;
+
+// media screens
+
+$xs: 480px;    // max-width (320px — 480px: Mobile devices)
+$sm: 768px;    // max-width (481px — 768px: iPads, Tablets)
+$md: 1024px;   // max-width (769px — 1024px: Small screens, laptops)
+$lg: 1200px;   // max-width (1025px — 1200px: Desktops)
+$xl: 1380px;   // max-width (1201px — 1380px: Desktops, large screens)
+

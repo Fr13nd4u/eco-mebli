@@ -30,6 +30,7 @@
     display: flex;
     margin: 83px 0;
     justify-content: space-around;
+    align-items: center;
 
     position: relative;
     z-index: 1;
@@ -53,11 +54,15 @@
 
     &-text {
       text-transform: uppercase;
+      margin-top: 115px;
+
+      &_firstMt {
+        margin-top: -180px;
+      }
 
       h2 {
         font-size: 200px;
         font-weight: 800;
-        margin-top: 115px;
 
         span {
           margin-left: 0.7em;
@@ -110,3 +115,86 @@
     right: 11%;
   }
 }
+
+@media (max-width: $xl) {
+  .slide {
+    &_body {
+      justify-content: space-evenly;
+      
+      &-text {
+        margin-top: 170px;
+
+        &_firstMt {
+          margin-top: -30px;
+        }
+
+        h2 {
+          font-size: 160px;
+        }
+
+        h4 {
+          font-size: 32px;
+          margin-right: 7px;
+        }
+      }
+
+      &-img {
+        width: 25%;
+        height: 25%;
+      }
+
+      &-circle {
+        margin-top: 50px;
+
+        svg {
+          width: 568px;
+          height: 568px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .arrow {
+    &-L {
+      left: 8%;
+    }
+  
+    &-R {
+      right: 8%;
+    }
+  }
+
+  .slide {
+    &_body {
+      &-text {
+        margin-top: 215px;
+
+        &_firstMt {
+          margin-top: -85px;;
+        }
+        h2 {
+          font-size: 138px;
+        }
+        h4 {
+          font-size: 28px;
+        }
+      }
+
+      &-img {
+        width: 33%;
+      }
+
+      &-circle {
+        margin-top: 50px;
+
+        svg {
+          width: 568px;
+          height: 568px;
+        }
+      }
+    }
+  }
+}
+

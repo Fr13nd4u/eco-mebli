@@ -22,8 +22,20 @@ a {
 .container {
   max-width: 1480px;
   margin: auto;
+
+  @media (max-width: $xl) {
+    max-width: 1170px;
+  }
+
+  @media (max-width: $lg) {
+    max-width: 925px;
+  }
 }
 
 .vl {
   border-left: 25px solid rgba(255, 255, 255, 0.3);
 }
+
+
+
+

@@ -22,26 +22,18 @@ const Carousel = ({ children }: any) => {
   }, [children]);
 
   const handleLeftArrowClick = () => {
-    console.log("LEFT");
-
     setOffset((currentOffset) => {
       const newOffset = currentOffset + SLIDE_WIDTH;
-
-      console.log(newOffset);
 
       return Math.min(newOffset, 0);
     });
   };
 
   const handleRightArrowClick = () => {
-    console.log("RIGHT");
-
     setOffset((currentOffset) => {
       const newOffset = currentOffset - SLIDE_WIDTH;
 
       const maxOffset = -(SLIDE_WIDTH * (slides.length - 1));
-
-      console.log(newOffset);
 
       return Math.max(maxOffset, newOffset);
     });

@@ -41,13 +41,18 @@ const Main = () => {
                 {circleSvg}
               </div>
               <div className="slide_body-text">
-                <h2>
+                <h2 className="slide_body-text_firstMt">
                   еко <br />
                   <span>меблі</span>
                 </h2>
                 <h4>під замовлення</h4>
               </div>
-              <img src={item_1} alt="" style={{ margin: "-160px 40px 0 0" }} />
+              <img
+                src={item_1}
+                alt=""
+                className="slide_body-img"
+                style={{ margin: "-160px 40px 0 0" }}
+              />
             </div>
           </div>
         </div>
@@ -81,7 +86,12 @@ const Main = () => {
                   індустріальний <br /> стиль
                 </h4>
               </div>
-              <img src={item_2} alt="" style={{ margin: "0 40px 0 0" }} />
+              <img
+                src={item_2}
+                alt=""
+                className="slide_body-img"
+                style={{ margin: "0 40px 0 0" }}
+              />
             </div>
           </div>
         </div>
