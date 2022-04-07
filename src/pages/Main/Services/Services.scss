@@ -97,6 +97,8 @@
 
 @media (max-width: $lg) {
   .services {
+    height: 307px;
+    
     &-top {
       grid-template-columns: 1fr 4fr 1fr;
     }

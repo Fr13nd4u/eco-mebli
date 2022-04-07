@@ -25,8 +25,8 @@ const Main = () => {
               <div
                 className="slide_body-circle"
                 style={{
-                  top: `calc(50% + ${oY / 2}px)`,
-                  left: `calc(50% + ${oX / 2}px)`,
+                  top: `calc(50% + ${oY / 3}px)`,
+                  left: `calc(50% + ${oX / 3}px)`,
                   transform: "translate(-50%, -50%)",
                 }}
               >
@@ -62,8 +62,8 @@ const Main = () => {
               <div
                 className="slide_body-circle"
                 style={{
-                  top: `calc(50% + ${oY / 2}px)`,
-                  left: `calc(50% + ${oX / 2}px)`,
+                  top: `calc(50% + ${oY / 3}px)`,
+                  left: `calc(50% + ${oX / 3}px)`,
                   transform: "translate(-50%, -50%)",
                 }}
               >
@@ -90,7 +90,7 @@ const Main = () => {
                 src={item_2}
                 alt=""
                 className="slide_body-img"
-                style={{ margin: "0 40px 0 0" }}
+                style={{ margin: "0 40px -110px 0" }}
               />
             </div>
           </div>
