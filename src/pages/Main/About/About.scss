@@ -74,56 +74,56 @@
 
 
 @media (max-width: $xl) {
-  .about-item {
-    margin: 80px 0 0 -45px;
-    
-    &-description {
+  .about-item-description {
     margin-left: 35px;
     
-      &_subtitle {
-        font-size: 32px;
+    &_subtitle {
+      font-size: 32px;
+    }
+    
+    &_title {
+      font-size: 64px;
+    }
+    
+    &_text {
+      margin-top: 50px;
+    }
+    
+    &-withLogo {
+      align-items: center;
+      
+      h6 {
+        margin-top: 60px;
+        line-height: 1.75;
       }
       
-      &_title {
-        font-size: 64px;
-      }
-      
-      &_text {
-        margin-top: 50px;
-      }
-      
-      &-withLogo {
-        align-items: center;
-        
-        h6 {
-          margin-top: 60px;
-          line-height: 1.75;
-        }
-        
-        img {
-          width: 320px;
-          height: 320px;
-        }
+      img {
+        width: 320px;
+        height: 320px;
       }
     }
   }
 }
 
 @media (max-width: $lg) {
-  .about-item-description {
-    width: 100%;
+  .about-item {
+    margin: 80px 0 0 -45px;
 
-    &-withLogo {
+    &-description {
+      width: 100%;
 
-      h6 {
-        font-size: 32px;
-        margin-top: 30px;
-        line-height: 1.5;
-      }
+      &-withLogo {
 
-      img {
-        width: 280px;
-        height: 280px;
+        h6 {
+          font-size: 32px;
+          margin-top: 30px;
+          line-height: 1.5;
+        }
+
+        img {
+          width: 280px;
+          height: 280px;
+        }
       }
     }
   }
