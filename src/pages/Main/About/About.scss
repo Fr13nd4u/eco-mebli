@@ -22,7 +22,7 @@
     &_circule {
       width: 73px;
       height: 73px;
-      border-radius: 50px;
+      border-radius: 50%;
       background: $secondColor;
     }
 
@@ -74,32 +74,36 @@
 
 
 @media (max-width: $xl) {
-  .about-item-description {
+  .about-item {
+    margin: 80px 0 0 -45px;
+    
+    &-description {
     margin-left: 35px;
-
-    &_subtitle {
-      font-size: 32px;
-    }
-
-    &_title {
-      font-size: 64px;
-    }
-
-    &_text {
-      margin-top: 50px;
-    }
-
-    &-withLogo {
-      align-items: center;
-
-      h6 {
-        margin-top: 60px;
-        line-height: 1.75;
+    
+      &_subtitle {
+        font-size: 32px;
       }
-
-      img {
-        width: 320px;
-        height: 320px;
+      
+      &_title {
+        font-size: 64px;
+      }
+      
+      &_text {
+        margin-top: 50px;
+      }
+      
+      &-withLogo {
+        align-items: center;
+        
+        h6 {
+          margin-top: 60px;
+          line-height: 1.75;
+        }
+        
+        img {
+          width: 320px;
+          height: 320px;
+        }
       }
     }
   }

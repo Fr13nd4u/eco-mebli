@@ -13,6 +13,17 @@ body {
   // font-family: 'Roboto', sans-serif;
   background: $darkColor;
   color: $mainTextColor;
+
+  scrollbar-color: $mainTextColor rgba(255, 255, 255, 0.1);
+  scrollbar-width: 9px;
+  &::-webkit-scrollbar {
+    width: 9px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $mainTextColor;
+    // border-radius: 4px;
+  }
 }
 
 a {

@@ -8,7 +8,7 @@ import "./About.scss";
 
 const About = () => {
   useEffect(() => {
-    Aos.init({ duration: 1600, easing: "ease-in-out" });
+    Aos.init({ duration: 1600, easing: "ease-in-out", offset: 0 });
   }, []);
 
   return (
