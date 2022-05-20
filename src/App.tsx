@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Main from "./pages/Main";
 import Works from "./pages/Works";
 import Catalog from "./pages/Catalog";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
