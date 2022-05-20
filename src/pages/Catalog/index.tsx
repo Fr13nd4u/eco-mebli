@@ -1,6 +1,5 @@
 import React from "react";
 import "./Catalog.scss";
-import Header from "../../components/Header/index"
 
 import item_1 from "../../assets/catalog_menu/item-1.jpg"
 import item_2 from "../../assets/catalog_menu/item-2.jpg"
@@ -9,13 +8,12 @@ import { Link } from "react-router-dom";
 
 const Catalog = () => {
   return (
-    <section>
-      <Header />
-      <div className="background">
-        <h2 className="background-text">КАТАЛОГ</h2>
+    <section className="wrapper">
+      <div className="catalog-header">
       </div>
       <div className="container">
-        <div className="catalog catalog-top">
+        <h2 className="catalog catalog-text">КАТАЛОГ</h2>
+        <div className="catalog catalog-items">
           <Link
             to="/"
             className="catalog-item"
