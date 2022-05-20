@@ -1,0 +1,103 @@
+@import "../../styles/palette.scss";
+
+section {
+  margin-bottom: 250px;
+}
+
+.background{
+    background-image: url("../../assets/catalog_menu/background-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 60px;
+    height: 350px;
+    width: 100%;
+    padding-top: 30px;
+
+    &-text {
+      height: 64px;
+      width: 286px;
+      display: block;
+      margin: 112px 0 0 192px;
+      font-family: $primaryFont;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 64px;
+      letter-spacing: -0.02em;
+    }
+}
+
+.catalog {
+  height: 397px;
+  display: grid;
+  grid-column-gap: 40px;
+  margin-bottom: 5px;
+
+  &-top {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 340px;
+  }
+
+  &-item {
+    width: 477px;
+    height: 565px;
+    background: no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    background-size: 100% 100%;
+    transition: 0.6s ease-in-out;
+
+    &_hovered {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      &-title {
+        font-size: 24px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $darkColor;
+        background: $secondColor;
+        padding: 8px 0;
+        width: 100%;
+        height: 40px;
+        transition: 0.6s ease-in-out;
+      }
+    }
+
+    &:hover {
+      transition: 0.6s ease-in-out;
+      background-size: 110% 110%;
+
+      .catalog-item_hovered-title {
+        background: $mainTextColor;
+        height: 80px;
+        transition: 0.6s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .services {
+    height: 307px;
+    
+    &-top {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+  
+    &-bottom {
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+  }
+
+  .catalogLinks a {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
