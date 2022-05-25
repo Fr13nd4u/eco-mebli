@@ -1,0 +1,31 @@
+[
+    {
+      "image": "/assets/works_images/kitchen.png",
+      "title": "КУХНІ"
+    },
+    {
+      "image": "/assets/works_images/bathroom.jpg",
+      "title": "ШУХЛЯДКИ"
+    },
+    {
+      "image": "/assets/works_images/3.jpg",
+      "title": "ШУХЛЯДКИ"
+    },
+    {
+      "image": "/assets/works_images/tables.jpg",
+      "title": "Столи"
+    },
+    {
+      "image": "/assets/works_images/stairs.jpg",
+      "title": "СХОДИ"
+    },
+    {
+      "image": "/assets/works_images/light.jpg",
+      "title": "СВІТЛО"
+    },
+    {
+      "image": "/assets/works_images/doors.jpg",
+      "title": "ДВЕРІ"
+    }
+  ]
+
