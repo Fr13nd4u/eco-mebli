@@ -7,6 +7,7 @@ const WorkOption = ({
   backgroundClassName,
   headerClssName,
   title,
+  titleClassName
 }) => {
   console.log(imageURL);
   return (
@@ -19,7 +20,7 @@ const WorkOption = ({
     >
    
         <span className={headerClssName}>
-          <p>{title}</p>
+          <h4 className={titleClassName}>{title}</h4>
         </span>
       
     </Link>

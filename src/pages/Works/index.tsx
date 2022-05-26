@@ -8,14 +8,15 @@ const Works = () => {
       <div className="apper_container"></div>
       <div className="container">
         <p className="apper_container-title">РОБОТИ</p>
-        <div className="options_grid">
+        <div className="options options_grid">
           {images.map((item) => (
             <WorkOption
               key={item.image}
               imageURL={item.image}
-              headerClssName="option_header"
-              backgroundClassName={"option "}
+              headerClssName={"options-option_header"}
+              backgroundClassName={"options-option "}
               title={item.title}
+              titleClassName ={"options-option_header-title"}
             />
           ))}
         </div>
