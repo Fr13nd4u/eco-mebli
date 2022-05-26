@@ -1,6 +1,6 @@
 
 
-@import "../../styles/palette.scss";
+@import "../../../styles//palette.scss";
 
 .top_option{
     grid-column-start: 1;
@@ -11,7 +11,7 @@
     height: 320px;
 }
 .option{
-    position: relative;
+    //position: relative;
     background-repeat: no-repeat;
     background-position: center center;
     //background-size: cover;
@@ -21,9 +21,9 @@
     
 }
 .option_header{
-    position: absolute;
-    top: 0;
-    left: 0;
+    //position: absolute;
+    margin-top: 0;
+    margin-left: 0;
     width: 100%;
     height: 90px;
     background-color: $mainTextColor;

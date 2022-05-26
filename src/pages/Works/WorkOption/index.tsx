@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./WorkOption.scss";
+import "../Works.scss";
 
 const WorkOption = ({
   imageURL,
   backgroundClassName,
   headerClssName,
   title,
+  titleClassName
 }) => {
   console.log(imageURL);
   return (
@@ -17,11 +18,11 @@ const WorkOption = ({
         backgroundImage: `url(${imageURL})`,
       }}
     >
-      <div>
+   
         <span className={headerClssName}>
-          <p>{title}</p>
+          <h4 className={titleClassName}>{title}</h4>
         </span>
-      </div>
+      
     </Link>
   );
 };

@@ -1,9 +1,6 @@
 
 @import "../../styles/palette.scss";
 
-
-
-
 .apper_container{
     background-image: url('../../../public/assets/works_images/apper_background.png');
     width: 100%;
@@ -15,7 +12,6 @@
     position: absolute;
   
     &-title{
-
         width: 262px;
         height: 64px;
         padding: 178px 0 159px 180px;
@@ -34,15 +30,76 @@
 
 }
 
-.options_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    width: 75%;
-    height: auto;
-    margin-top: 401px;
-    margin: 0 auto;
-    
-}
+.options{
+    &_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        width: 75%;
+        height: auto;
+        margin-top: 401px;
+        margin: 0 auto;
+        
+    }
+   
+    &-option{
+        background-repeat: no-repeat;
+        height: 320px;
+        background-position: center center;
+        background-size: 100%;
+        overflow: hidden;
+        transition: 0.6s ease-in-out;
+
+        &:first-child{
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        &_header{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            margin-left: 0;
+            width: 100%;
+            height: 80px;
+            padding: 8px 0;
+            background-color: $mainTextColor;
+            color: $darkColor;
+            align-content: center;
+            text-align: center;
+            transition: 0.6s ease-in-out;
+
+            &-title {
+                font-size: 24px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 25px;
+                transition: 0.6s ease-in-out;
+              }
+        }
+
+        &:hover{
+            transition: 0.6s ease-in-out;
+            background-size: 110%  ;
+        
+            .options-option_header{
+                height: 40px;
+                background-color: $secondColor;
+                color: $darkColor;
+                transition: 0.6s ease-in-out;
+            }
+        
+            .options-option_header-title {
+                margin-top: 10px;
+                font-size: 24px;
+                text-transform: uppercase;
+                text-align: center;
+                transition: 0.6s ease-in-out;
+                width: 100%;
+            }
+        }   
+    }
+    }
+
