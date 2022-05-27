@@ -1,13 +1,13 @@
 @import "../../styles/palette.scss";
 
-.wrapper{
+.catalog-wrapper{
   margin-bottom: 250px;
 }
 
 .catalog-header{
     background-image: url("../../assets/catalog_menu/background-1.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     height: 400px;
     width: 100%;
     margin-top: 60px;
