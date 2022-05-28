@@ -1,31 +1,31 @@
 [
     {
       "image": "/assets/works_images/kitchen.png",
-      "title": "КУХНІ"
+      "title": "кухні"
     },
     {
       "image": "/assets/works_images/bathroom.jpg",
-      "title": "ШУХЛЯДКИ"
+      "title": "шухлядки"
     },
     {
       "image": "/assets/works_images/3.jpg",
-      "title": "ШУХЛЯДКИ"
+      "title": "шухлядки"
     },
     {
       "image": "/assets/works_images/tables.jpg",
-      "title": "Столи"
+      "title": "столи"
     },
     {
       "image": "/assets/works_images/stairs.jpg",
-      "title": "СХОДИ"
+      "title": "сходи"
     },
     {
       "image": "/assets/works_images/light.jpg",
-      "title": "СВІТЛО"
+      "title": "світло"
     },
     {
       "image": "/assets/works_images/doors.jpg",
-      "title": "ДВЕРІ"
+      "title": "двері"
     }
   ]
 
