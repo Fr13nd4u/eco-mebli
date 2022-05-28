@@ -93,30 +93,16 @@
   &-item  {
 
     background-repeat: no-repeat;
-    
     background-position: center center;
     background-size: 120% ;
     overflow: hidden;
     height: 100% ;
     transition: 0.6s ease-in-out;
-    //background-size: cover;
-
-    //background-repeat: no-repeat;
-    //background: no-repeat center center;
-    //background-position: center;
-    //background-size: 100%;
-    
-  
 
     &:hover {
       transition: 0.6s ease-in-out;
-      background-size: 140%  ;
-      
-      
+      background-size: 140%  ; 
     }
-
-
-  
   }
 }
 //dealing with uneven height of pictures
