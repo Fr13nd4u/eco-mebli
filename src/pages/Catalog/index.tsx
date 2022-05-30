@@ -13,7 +13,7 @@ const Catalog = () => {
       <div className="catalog-header">
       </div>
       <div className="container">
-        <h2 className="catalog catalog-text">КАТАЛОГ</h2>
+        <h2 className="catalog-text">КАТАЛОГ</h2>
         <div className="catalog catalog-items">
           <Link
             to={Routers.DOORSCALC}

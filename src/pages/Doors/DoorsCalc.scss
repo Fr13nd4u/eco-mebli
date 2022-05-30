@@ -24,12 +24,13 @@
     display: grid;
     grid-column-gap: 40px;
     margin-bottom: 5px;
+    font-family: $primaryFont;
+    font-weight: 600;
   
     &-title {
         height: 64px;
         width: 750px;
         padding-top: 145px;
-        font-family: $primaryFont;
         font-size: 64px;
         font-weight: 800;
         line-height: 64px;
@@ -38,9 +39,6 @@
 
     &-text {
         padding-top: 23px;
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 14px;
         line-height: 163.9%;
         letter-spacing: 0.02em;
@@ -57,9 +55,6 @@
     }
 
     &-calc_titles {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 0.05em;
@@ -69,7 +64,7 @@
 
     &-img {
         margin-top: 50px;
-        height: auto;
+        height: 900px;
     }
 }
 
@@ -79,17 +74,41 @@
     height: 56px;
     background-color: $unhoveredColor;
     align-items: center;
+    font-family: $primaryFont;
+    font-weight: 600;
 
     &-radio {
         visibility: hidden;
+
+        &:hover {
+            visibility: visible;
+            margin: 0 0 0 26px;
+            appearance: none;
+            border: 2.5px solid $darkColor;
+            border-radius: 50%;
+            background-clip: content-box;
+            padding: 2px;
+            height: 18px;
+            width: 18px;
+        }
+        
+        &:checked {
+            visibility: visible;
+            margin: 0 0 0 26px;
+            appearance: none;
+            border: 2.5px solid $darkColor;
+            background-color: $darkColor;
+            border-radius: 50%;
+            background-clip: content-box;
+            padding: 2px;
+            height: 18px;
+            width: 18px;
+        }
 
     }
 
     &-name {
         margin-left: 26px;
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -97,9 +116,6 @@
     }
 
     &-price {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 0.05em;
@@ -107,40 +123,14 @@
         margin-left: auto;
         margin-right: 30px;
     }
-}
-
-.material:hover {
-    background-color: $secondMainTextColor;
     
+    &:hover {
+        background-color: $secondMainTextColor;
+    }
 }
 
 .material_active {
     background-color: $secondMainTextColor;
-}
-
-.material-radio:hover {
-    visibility: visible;
-    margin: 0 0 0 26px;
-    appearance: none;
-    border: 2.5px solid $darkColor;
-    border-radius: 50%;
-    background-clip: content-box;
-    padding: 2px;
-    height: 18px;
-    width: 18px;
-}
-
-.material-radio:checked {
-    visibility: visible;
-    margin: 0 0 0 26px;
-    appearance: none;
-    border: 2.5px solid $darkColor;
-    background-color: $darkColor;
-    border-radius: 50%;
-    background-clip: content-box;
-    padding: 2px;
-    height: 18px;
-    width: 18px;
 }
 
 .area {
@@ -149,6 +139,8 @@
     height: 56px;
     margin: 0 80px 0 80px;
     align-items: center;
+    font-family: $primaryFont;
+    font-weight: 600;
 
     &-title_block {
         background-color: $secondMainTextColor;
@@ -158,9 +150,6 @@
     }
 
     &-title {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -176,9 +165,6 @@
         color: $darkColor;
         border: none;
         margin-left: auto;
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 24px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -197,9 +183,6 @@
     }
 
     &-size {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -215,11 +198,10 @@
     margin: 7px 80px 0 80px;
     height: 56px;
     background-color: $secondMainTextColor;
+    font-family: $primaryFont;
+    font-weight: 600;
 
     &-text {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -230,9 +212,6 @@
     }
 
     &-currency {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -244,8 +223,6 @@
     }
 
     &-result {
-        font-family: $primaryFont;
-        font-style: normal;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
@@ -261,6 +238,8 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     margin: 30px 80px 0 80px;
+    font-family: $primaryFont;
+    font-weight: 600;
 
     &-block {
         height: 56px;
@@ -271,9 +250,6 @@
     }
 
     &-text {
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -286,9 +262,6 @@
         height: 100%;
         border: none;
         text-align: center;
-        font-family: $primaryFont;
-        font-style: normal;
-        font-weight: 600;
         font-size: 20px;
         line-height: 21px;
         letter-spacing: 0.05em;
@@ -303,9 +276,6 @@
     background-color: $secondMainTextColor;
     border: none;
     color: $darkColor;
-    font-family: $primaryFont;
-    font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.05em;

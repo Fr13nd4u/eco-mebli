@@ -81,15 +81,15 @@ return (
             </label>
             <input {...register('area')} type="text" className="area-input" placeholder="_ _ _ _ _" id="area"
               onChange={HandleChangeArea}
-            ></input>
+            />
             <label className="area-size_block">
               <p className="area-size">ПГ.М.</p>
             </label>
           </div>
-          <div className="total-price">
-            <label className="total-price-text">ЗАГ. ВАРТІСТЬ</label>
-            <label className="total-price-result">{totalPrice}<p className="total-price-currency">ГРН</p></label>
-          </div>
+          <label className="total-price">
+            <span className="total-price-text">ЗАГ. ВАРТІСТЬ</span>
+            <span className="total-price-result">{totalPrice}<p className="total-price-currency">ГРН</p></span>
+          </label>
           <div className="contact-info">
             <div className="contact-info-block">
               <p className="contact-info-text">
