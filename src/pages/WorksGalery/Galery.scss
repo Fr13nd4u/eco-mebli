@@ -3,19 +3,13 @@
     background-image: url("../../../public/assets/works_images/apper_background.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    //position: absolute;
     z-index: -1;
-    //margin-top: 60px;
     height: 350px;
     width: 100%;
     padding-top: 30px;
 
     &-offer{
       max-width: 1480px;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      //width: auto;
       height: 28px;
       font-family: $primaryFont;
       font-style: normal;
@@ -27,20 +21,16 @@
       background-color: transparent;
       margin: auto;
       justify-content: flex-start;
-      //margin:20px 0 0 192px ;
-      padding: 120px 0 0;
-      
+      padding: 110px 0 0;     
       
     &-text {
       height: 64px;
       width: auto;
-     // margin: auto;
       display: block;
-    //  margin: 112px 0 0 192px;
       font-family: $primaryFont;
       font-size: 64px;
       font-weight: 800;
-      line-height: 64px;
+      line-height: 1;
       letter-spacing: -0.02em;
       text-transform: uppercase;
       background-color: transparent;
@@ -50,10 +40,6 @@
         max-width: 1480px;
         display: flex;
         flex-direction: row;
-        text-align: left;
-        height: 28px;
-        font-family: $primaryFont;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 28px;
@@ -91,30 +77,71 @@
   }
 
   &-item  {
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 120% ;
+    background: no-repeat center center;
+    background-size: 120% 100% ;
     overflow: hidden;
     height: 100% ;
     transition: 0.6s ease-in-out;
 
     &:hover {
       transition: 0.6s ease-in-out;
-      background-size: 140%  ; 
+      background-size: 140%  120%; 
     }
   }
 }
 //dealing with uneven height of pictures
 .offers-bottom .offers-item:nth-child(1){
-  background-size: 170%;
+  background-size: 180%;
 }
+
 .offers-bottom .offers-item:nth-child(1):hover{
   background-size: 200%;
 }
+
 .offers-item:nth-child(2){
   background-size: 100%;
 }
+
 .offers-item:nth-child(2):hover{
   background-size: 110%;
+}
+
+
+@media (max-width: $lg) {
+  .offers{
+    &-top {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+  
+    &-bottom {
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+  }
+
+  .offers-item{
+    background-size: 180% ;
+    height: 100% ;
+  }
+
+  .offers-item:hover{
+    background-size: 190% ;
+  }
+
+  .offers-bottom .offers-item:nth-child(1){
+    background-size: 245%;
+  }
+
+  .offers-bottom .offers-item:nth-child(1):hover{
+    background-size: 255%;
+  }
+}
+@media (max-width: $xl) {
+  .backgroundImg{
+    height: 250px;
+
+    &-offer{
+      max-width: 1170px;
+      padding: 78px 0 0;
+    }
+  }
 }

@@ -24,33 +24,31 @@ const Galery = () => {
       </div>
       <div className="container">
         <div className="offers offers-top">
-          {kitchen_images.map((image, index) =>
-            index <= kitchen_images.length - 4 ? (
-              <div
-                key={index}
-                className="offers-item"
-                style={{
-                  backgroundImage: `url(${image.image})`,
-                }}
-              ></div>
-            ) : (
-              <></>
-            )
+          {kitchen_images.map(
+            (image, index) =>
+              index <= kitchen_images.length - 4 && (
+                <div
+                  key={index}
+                  className="offers-item"
+                  style={{
+                    backgroundImage: `url(${image.image})`,
+                  }}
+                ></div>
+              )
           )}
         </div>
         <div className="offers offers-bottom">
-          {kitchen_images.map((image, index) =>
-            index > kitchen_images.length - 4 ? (
-              <div
-                key={index}
-                className="offers-item"
-                style={{
-                  backgroundImage: `url(${image.image})`,
-                }}
-              ></div>
-            ) : (
-              <></>
-            )
+          {kitchen_images.map(
+            (image, index) =>
+              index > kitchen_images.length - 4 && (
+                <div
+                  key={index}
+                  className="offers-item"
+                  style={{
+                    backgroundImage: `url(${image.image})`,
+                  }}
+                ></div>
+              )
           )}
         </div>
       </div>
