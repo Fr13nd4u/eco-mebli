@@ -1,31 +1,18 @@
 @import "../../styles/palette.scss";
 
-section {
+.catalog-wrapper{
   margin-bottom: 250px;
 }
 
-.background{
+.catalog-header{
     background-image: url("../../assets/catalog_menu/background-1.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
     position: absolute;
     z-index: -1;
-    margin-top: 60px;
-    height: 350px;
-    width: 100%;
-    padding-top: 30px;
-
-    &-text {
-      height: 64px;
-      width: 286px;
-      display: block;
-      margin: 112px 0 0 192px;
-      font-family: $primaryFont;
-      font-size: 64px;
-      font-weight: 800;
-      line-height: 64px;
-      letter-spacing: -0.02em;
-    }
 }
 
 .catalog {
@@ -34,13 +21,21 @@ section {
   grid-column-gap: 40px;
   margin-bottom: 5px;
 
-  &-top {
+  &-text {
+      padding-top: 175px;
+      font-family: $primaryFont;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 64px;
+      letter-spacing: -0.02em;
+  }
+
+  &-items {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 340px;
+    padding-top: 100px;
   }
 
   &-item {
-    width: 477px;
     height: 565px;
     background: no-repeat center center;
     background-size: cover;
@@ -84,20 +79,5 @@ section {
 }
 
 @media (max-width: $lg) {
-  .services {
-    height: 307px;
-    
-    &-top {
-      grid-template-columns: 1fr 4fr 1fr;
-    }
   
-    &-bottom {
-      grid-template-columns: 1fr 3fr 1fr;
-    }
-  }
-
-  .catalogLinks a {
-    font-size: 32px;
-    line-height: 1.5;
-  }
 }
