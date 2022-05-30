@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
+import Routers from "./routers"
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./pages/Main";
@@ -8,6 +10,9 @@ import Works from "./pages/Works";
 import Catalog from "./pages/Catalog";
 import Contacts from "./pages/Contacts";
 import WorksGalery from "./pages/WorksGalery"
+import KitchenCalc from "./pages/Kitchen";
+import StairsCalc from "./pages/Stairs";
+import DoorsCalc from "./pages/Doors";
 
 import "./styles/main.scss";
 
@@ -16,10 +21,13 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/works"  element={<Works />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path={Routers.MAIN} element={<Main />} />
+        <Route path={Routers.WORKS} element={<Works />} />
+        <Route path={Routers.CATALOG} element={<Catalog />} />
+        <Route path={Routers.CONTACTS} element={<Contacts />} />
+        <Route path={Routers.KITCHENCALC} element={<KitchenCalc />} />
+        <Route path={Routers.STAIRSCALC} element={<StairsCalc />} />
+        <Route path={Routers.DOORSCALC} element={<DoorsCalc />} />
         <Route path="/works/:title" element={<WorksGalery />}/>
       </Routes>
       <Footer />
