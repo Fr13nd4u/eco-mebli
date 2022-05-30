@@ -1,0 +1,147 @@
+@import "../../styles/palette.scss";
+.backgroundImg{
+    background-image: url("../../../public/assets/works_images/apper_background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+    height: 350px;
+    width: 100%;
+    padding-top: 30px;
+
+    &-offer{
+      max-width: 1480px;
+      height: 28px;
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background-color: transparent;
+      margin: auto;
+      justify-content: flex-start;
+      padding: 110px 0 0;     
+      
+    &-text {
+      height: 64px;
+      width: auto;
+      display: block;
+      font-family: $primaryFont;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      background-color: transparent;
+    }
+
+      &_bottom{
+        max-width: 1480px;
+        display: flex;
+        flex-direction: row;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        background-color: transparent;
+        margin-top: 25px;
+      }
+
+      &_button{
+        width: 265px;
+        padding: 20px 0;
+        margin-top: -20px;
+        margin-left: 25px;
+        background: $secondColor;
+        color: $darkColor;
+        text-align: center;
+        align-content: center;
+      }
+    }
+}
+
+.offers{
+  height: 307px;
+  display: grid;
+  grid-column-gap: 5px;
+
+  &-top {
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-bottom: 5px;
+  }
+
+  &-bottom {
+    grid-template-columns: 2fr 7fr 2fr;
+  }
+
+  &-item  {
+    background: no-repeat center center;
+    background-size: 120% 100% ;
+    overflow: hidden;
+    height: 100% ;
+    transition: 0.6s ease-in-out;
+
+    &:hover {
+      transition: 0.6s ease-in-out;
+      background-size: 140%  120%; 
+    }
+  }
+}
+//dealing with uneven height of pictures
+.offers-bottom .offers-item:nth-child(1){
+  background-size: 180%;
+}
+
+.offers-bottom .offers-item:nth-child(1):hover{
+  background-size: 200%;
+}
+
+.offers-item:nth-child(2){
+  background-size: 100%;
+}
+
+.offers-item:nth-child(2):hover{
+  background-size: 110%;
+}
+
+
+@media (max-width: $lg) {
+  .offers{
+    &-top {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+  
+    &-bottom {
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+  }
+
+  .offers-item{
+    background-size: 180% ;
+    height: 100% ;
+  }
+
+  .offers-item:hover{
+    background-size: 190% ;
+  }
+
+  .offers-bottom .offers-item:nth-child(1){
+    background-size: 245%;
+  }
+
+  .offers-bottom .offers-item:nth-child(1):hover{
+    background-size: 255%;
+  }
+}
+@media (max-width: $xl) {
+  .backgroundImg{
+    height: 250px;
+
+    &-offer{
+      max-width: 1170px;
+      padding: 78px 0 0;
+    }
+  }
+}

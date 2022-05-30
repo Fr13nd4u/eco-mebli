@@ -9,10 +9,11 @@ const WorkOption = ({
   title,
   titleClassName
 }) => {
-  console.log(imageURL);
+  
   return (
     <Link
-      to="/"
+      to={`/works/${title}`}
+      state={{title}}
       className={backgroundClassName}
       style={{
         backgroundImage: `url(${imageURL})`,

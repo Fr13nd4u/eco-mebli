@@ -9,6 +9,7 @@ import Main from "./pages/Main";
 import Works from "./pages/Works";
 import Catalog from "./pages/Catalog";
 import Contacts from "./pages/Contacts";
+import WorksGalery from "./pages/WorksGalery"
 import KitchenCalc from "./pages/Kitchen";
 import StairsCalc from "./pages/Stairs";
 import DoorsCalc from "./pages/Doors";
@@ -27,6 +28,7 @@ function App() {
         <Route path={Routers.KITCHENCALC} element={<KitchenCalc />} />
         <Route path={Routers.STAIRSCALC} element={<StairsCalc />} />
         <Route path={Routers.DOORSCALC} element={<DoorsCalc />} />
+        <Route path="/works/:title" element={<WorksGalery />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
