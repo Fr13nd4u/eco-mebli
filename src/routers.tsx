@@ -6,6 +6,7 @@ enum routers {
     KITCHENCALC = "/kitchen",
     STAIRSCALC = "/stairs",
     DOORSCALC = "/doors",
+    WORKSGALERY="/works/:title",
  }
 
  export default routers
