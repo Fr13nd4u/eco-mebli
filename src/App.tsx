@@ -28,7 +28,7 @@ function App() {
         <Route path={Routers.KITCHENCALC} element={<KitchenCalc />} />
         <Route path={Routers.STAIRSCALC} element={<StairsCalc />} />
         <Route path={Routers.DOORSCALC} element={<DoorsCalc />} />
-        <Route path="/works/:title" element={<WorksGalery />}/>
+        <Route path={Routers.WORKSGALERY} element={<WorksGalery />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
